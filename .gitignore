@@ -18,7 +18,7 @@ bin/
 obj/
 
 # Visual Studio / Rider
-.vs/
+.vscode/
 .idea/
 *.user
 *.rsuser
