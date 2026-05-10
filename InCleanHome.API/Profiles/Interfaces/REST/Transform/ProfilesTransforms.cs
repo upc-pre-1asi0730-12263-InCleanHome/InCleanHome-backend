@@ -32,3 +32,13 @@ public static class UserPayloadFromEntityAssembler
     public static UserPayload FromUserAndProfile(User user, string name, string? phone)
         => new(user.Id, user.Email, user.Role, name, phone, user.IsVerified, user.DocumentsVerified);
 }
+
+public static class ClientResourceFromEntityAssembler
+{
+    public static ClientProfileResource ToResourceFromEntity(ClientProfile c)
+        => new(
+            c.Id,
+            c.UserId,
+            c.Name,
+            c.Phone);
+}

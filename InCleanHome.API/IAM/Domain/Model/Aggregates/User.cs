@@ -30,6 +30,7 @@ public class User
     }
 
     public User UpdatePasswordHash(string passwordHash) { PasswordHash = passwordHash; return this; }
+    public User UpdateEmail(string email) { Email = email; return this; }
     public User Verify()                                { IsVerified = true; return this; }
     public User MarkDocumentsAsVerified()               { DocumentsVerified = true; IsVerified = true; return this; }
 }

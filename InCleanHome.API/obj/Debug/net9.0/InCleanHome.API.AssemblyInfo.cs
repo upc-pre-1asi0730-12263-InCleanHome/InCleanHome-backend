@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InCleanHome.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b43d4ed30bca07949a13520640cd526ff25eb72b")]
 [assembly: System.Reflection.AssemblyProductAttribute("InCleanHome.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InCleanHome.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

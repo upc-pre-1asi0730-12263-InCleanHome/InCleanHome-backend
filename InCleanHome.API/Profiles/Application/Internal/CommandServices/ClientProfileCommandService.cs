@@ -1,3 +1,4 @@
+using InCleanHome.API.IAM.Domain.Repositories;
 using InCleanHome.API.Profiles.Domain.Model.Aggregates;
 using InCleanHome.API.Profiles.Domain.Model.Commands;
 using InCleanHome.API.Profiles.Domain.Repositories;
@@ -8,6 +9,7 @@ namespace InCleanHome.API.Profiles.Application.Internal.CommandServices;
 
 public class ClientProfileCommandService(
     IClientProfileRepository repository,
+    IUserRepository userRepository,
     IUnitOfWork unitOfWork) : IClientProfileCommandService
 {
     public async Task<ClientProfile> Handle(CreateClientProfileCommand command)
@@ -22,8 +24,11 @@ public class ClientProfileCommandService(
     {
         var profile = await repository.FindByUserIdAsync(command.UserId);
         if (profile == null) return null;
+
+        // Update ClientProfile with name and phone
         profile.Update(command.Name, command.Phone);
         repository.Update(profile);
+
         await unitOfWork.CompleteAsync();
         return profile;
     }

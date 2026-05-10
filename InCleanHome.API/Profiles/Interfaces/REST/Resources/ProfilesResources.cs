@@ -63,3 +63,14 @@ public record WorkerStatsResource(
     List<MonthlyEarning> MonthlyEarnings);
 
 public record MonthlyEarning(string Month, decimal Earnings);
+
+public record ClientProfileResource(
+    int Id,
+    int UserId,
+    string Name,
+    string? Phone);
+
+public record UpdateClientProfileResource(
+    string Name,
+    string? Phone);
+

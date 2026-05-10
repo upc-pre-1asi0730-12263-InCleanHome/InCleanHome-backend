@@ -27,6 +27,8 @@ public class ClientProfile : IEntityWithCreatedUpdatedDate
 
     public ClientProfile Update(string name, string phone)
     {
+        if (string.IsNullOrWhiteSpace(name))
+            throw new ArgumentException("Name is required");
         Name  = name;
         Phone = phone ?? string.Empty;
         return this;

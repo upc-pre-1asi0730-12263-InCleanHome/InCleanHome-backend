@@ -107,3 +107,4 @@ C:\Users\USUARIO\Downloads\analizar\InCleanHome.Backend\InCleanHome.Backend\InCl
 C:\Users\USUARIO\Downloads\analizar\InCleanHome.Backend\InCleanHome.Backend\InCleanHome.API\obj\Debug\net9.0\InCleanHome.API.pdb
 C:\Users\USUARIO\Downloads\analizar\InCleanHome.Backend\InCleanHome.Backend\InCleanHome.API\obj\Debug\net9.0\InCleanHome.API.genruntimeconfig.cache
 C:\Users\USUARIO\Downloads\analizar\InCleanHome.Backend\InCleanHome.Backend\InCleanHome.API\obj\Debug\net9.0\ref\InCleanHome.API.dll
+C:\Users\USUARIO\Downloads\analizar\InCleanHome.Backend\InCleanHome.Backend\InCleanHome.API\obj\Debug\net9.0\InCleanHome.API.sourcelink.json

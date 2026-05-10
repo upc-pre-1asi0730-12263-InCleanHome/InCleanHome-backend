@@ -78,5 +78,19 @@ public class UserCommandService(
         await unitOfWork.CompleteAsync();
     }
 
+    public async Task<User> Handle(UpdateUserEmailCommand command)
+    {
+        var user = await userRepository.FindByIdAsync(command.UserId)
+            ?? throw new Exception("User not found");
+
+        if (userRepository.ExistsByEmail(command.Email) && user.Email != command.Email)
+            throw new Exception($"Email {command.Email} is already taken");
+
+        user.UpdateEmail(command.Email);
+        userRepository.Update(user);
+        await unitOfWork.CompleteAsync();
+        return user;
+    }
+
     public string GenerateTokenFor(User user) => tokenService.GenerateToken(user);
 }

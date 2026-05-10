@@ -9,5 +9,6 @@ public interface IUserCommandService
     Task<User> Handle(SignUpCommand command);
     Task Handle(VerifyUserCommand command);
     Task Handle(UploadWorkerDocumentCommand command);
+    Task<User> Handle(UpdateUserEmailCommand command);
     string GenerateTokenFor(User user);
 }
