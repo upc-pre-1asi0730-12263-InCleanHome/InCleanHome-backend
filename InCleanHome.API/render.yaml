@@ -1,0 +1,21 @@
+databases:
+  - name: incleanhome-db
+    plan: free
+
+services:
+  - type: web
+    name: incleanhome-api
+    env: docker
+    plan: free
+    healthCheckPath: /swagger/index.html
+    envVars:
+      - key: ConnectionStrings__DefaultConnection
+        fromDatabase:
+          name: incleanhome-db
+          property: connectionString
+      - key: TokenSettings__Secret
+        generateValue: true
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Development
+      - key: ASPNETCORE_URLS
+        value: http://+:8080
