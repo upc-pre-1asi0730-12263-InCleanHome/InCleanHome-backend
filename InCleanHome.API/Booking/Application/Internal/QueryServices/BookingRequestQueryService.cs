@@ -5,6 +5,12 @@ using InCleanHome.API.Booking.Domain.Services;
 
 namespace InCleanHome.API.Booking.Application.Internal.QueryServices;
 
+
+/// Servicio de aplicación interno encargado de procesar las consultas (operaciones de lectura) 
+/// relacionadas con las solicitudes de reserva (BookingRequest).
+/// Forma parte de la implementación del patrón CQRS, aislando la lógica de recuperación de datos.
+
+
 public class BookingRequestQueryService(IBookingRequestRepository repository) : IBookingRequestQueryService
 {
     public async Task<BookingRequest?> Handle(GetBookingByIdQuery query)
