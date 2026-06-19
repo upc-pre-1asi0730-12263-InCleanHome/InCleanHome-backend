@@ -11,6 +11,10 @@ using Swashbuckle.AspNetCore.Annotations;
 
 namespace InCleanHome.API.Profiles.Interfaces.REST.Controllers;
 
+// REST API Controller.
+// Exposes HTTP endpoints for the Profiles module.
+// Maps incoming HTTP requests into commands or queries understood by the application layer.
+
 /// <summary>
 ///     Profile endpoints for clients and workers.
 /// </summary>
