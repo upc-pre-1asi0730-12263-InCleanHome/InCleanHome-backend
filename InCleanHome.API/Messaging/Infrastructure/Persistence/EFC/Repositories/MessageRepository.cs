@@ -6,6 +6,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace InCleanHome.API.Messaging.Infrastructure.Persistence.EFC.Repositories;
 
+/// <summary>
+/// Repositorio de infraestructura para la entidad <see cref="Message"/>.
+/// Encargado de gestionar la persistencia y consultas de mensajería utilizando Entity Framework Core.
+/// </summary>
+
 public class MessageRepository(AppDbContext context)
     : BaseRepository<Message>(context), IMessageRepository
 {
