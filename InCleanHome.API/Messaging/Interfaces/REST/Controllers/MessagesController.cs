@@ -11,7 +11,7 @@ using Swashbuckle.AspNetCore.Annotations;
 namespace InCleanHome.API.Messaging.Interfaces.REST.Controllers;
 
 /// <summary>
-///     Direct messaging endpoints between users.
+///     Direct messaging endpoints between the users.
 /// </summary>
 /// <remarks>
 ///     <list type="bullet">
