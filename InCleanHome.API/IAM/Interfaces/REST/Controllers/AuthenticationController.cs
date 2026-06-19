@@ -15,6 +15,21 @@ using Swashbuckle.AspNetCore.Annotations;
 
 namespace InCleanHome.API.IAM.Interfaces.REST.Controllers;
 
+// ====================================================================================
+// MODULE: Identity & Access Management (IAM)
+// LAYER: Interfaces (REST API Controller)
+//
+// Coordinates the core security, authentication, and user registration pipelines.
+// It exposes REST endpoints for user sign-in (issuing JWT tokens) and handles the
+// multi-step onboarding workflows for both Clients and Workers.
+//
+// This controller operates as an orchestrator across domain boundaries. Upon a 
+// successful SignUpCommand in the IAM context, it immediately invokes the corresponding 
+// Profile application services (Client/Worker Profile Command Services) to guarantee
+// atomicity and clean cross-context consistency between Identity and Domain Profiles.
+// ====================================================================================
+
+
 /// <summary>
 ///     Authentication endpoints consumed by the Vue frontend.
 /// </summary>
