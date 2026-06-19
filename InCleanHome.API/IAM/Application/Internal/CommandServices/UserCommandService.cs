@@ -8,6 +8,23 @@ using InCleanHome.API.Shared.Domain.Repositories;
 
 namespace InCleanHome.API.IAM.Application.Internal.CommandServices;
 
+// ====================================================================================
+// MODULE: Identity & Access Management (IAM)
+// LAYER: Application (Internal / CommandServices)
+//
+// Concrete implementation of IUserCommandService. Acts as the primary application 
+// orchestrator for mutations and use cases within the IAM context. It processes
+// incoming commands (SignIn, SignUp, Verify, Upload Document) to drive state changes.
+//
+// - Implements the Command handler pattern to enforce a clear separation between 
+//   write operations (Commands) and read operations (Queries).
+// - Security Integration: Collaborates with IHashingService for credential validation
+//   and ITokenService to securely manage JWT lifecycles.
+// - Transaction Management: Utilizes the IUnitOfWork pattern to ensure all database 
+//   operations (e.g., adding a user, persisting worker documents, updating verification 
+//   statuses) are executed atomically within a single database transaction.
+// ====================================================================================
+
 public class UserCommandService(
     IUserRepository userRepository,
     IWorkerDocumentRepository workerDocumentRepository,
