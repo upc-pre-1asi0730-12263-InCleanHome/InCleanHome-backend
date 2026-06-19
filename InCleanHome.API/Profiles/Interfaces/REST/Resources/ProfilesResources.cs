@@ -1,5 +1,9 @@
 namespace InCleanHome.API.Profiles.Interfaces.REST.Resources;
 
+// Data Transfer Object (DTO) / API Resource.
+// Defines the exact data structures accepted (Request) or returned (Response) 
+// by the API, isolating internal domain models from the network layer.
+
 // ===== Sign-up payloads coming from the frontend =====
 
 public record RegisterClientResource(string Name, string Email, string Password, string? Phone);
