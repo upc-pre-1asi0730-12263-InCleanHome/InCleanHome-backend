@@ -13,9 +13,9 @@ public class MessageQueryService(
     public async Task<IEnumerable<Message>> Handle(GetMessagesBetweenQuery query)
         => await repository.FindBetweenAsync(query.UserAId, query.UserBId);
 
-    /// <summary>
-    ///     Aggregates all messages of the user into one ConversationView per peer.
-    /// </summary>
+
+    ///     Agrego todos los mensajes de usuarios en la vista ConversationView.
+
     public async Task<IEnumerable<ConversationView>> Handle(GetConversationsForUserQuery query)
     {
         var all = (await repository.FindByUserAsync(query.UserId)).ToList();
