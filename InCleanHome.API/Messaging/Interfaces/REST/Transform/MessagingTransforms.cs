@@ -4,6 +4,11 @@ using InCleanHome.API.Messaging.Interfaces.REST.Resources;
 
 namespace InCleanHome.API.Messaging.Interfaces.REST.Transform;
 
+/// <summary>
+/// Ensamblador encargado de transformar la entidad de dominio 'Message' en su recurso de salida 'MessageResource'.
+/// Sigue el patrón DTO (Data Transfer Object) / Assembler.
+/// </summary>
+
 public static class MessageResourceFromEntityAssembler
 {
     public static MessageResource ToResourceFromEntity(Message m)
