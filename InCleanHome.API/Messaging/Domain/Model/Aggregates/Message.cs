@@ -7,7 +7,7 @@ namespace InCleanHome.API.Messaging.Domain.Model.Aggregates;
 ///     Message aggregate root — a single direct message between two users.
 /// </summary>
 /// <remarks>
-///     The conversation is implicit: any pair of <c>SenderId</c>/<c>RecipientId</c> messages,
+///     The conversation is all implicit: any pair of <c>SenderId</c>/<c>RecipientId</c> messages,
 ///     ordered by <c>CreatedDate</c>, makes a conversation thread. <c>ReadAt</c> is set once
 ///     the recipient opens the chat.
 /// </remarks>
