@@ -4,6 +4,10 @@ using InCleanHome.API.Profiles.Interfaces.REST.Resources;
 
 namespace InCleanHome.API.Profiles.Interfaces.REST.Transform;
 
+// Assembler / Mapper.
+// Contains utility functions to safely transform API Resources/DTOs 
+// into Domain Commands/Entities, and vice versa.
+
 public static class WorkerResourceFromEntityAssembler
 {
     /// <summary>
