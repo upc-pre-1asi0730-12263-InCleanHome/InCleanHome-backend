@@ -1,46 +1,20 @@
-# Default ignored files
-/shelf/
-/workspace.xml
-# Rider ignored files
-/.idea.InCleanHome.Backend.iml
-/modules.xml
-/projectSettingsUpdater.xml
-/contentModel.xml
-# Editor-based HTTP Client requests
-/httpRequests/
-# Datasource local storage ignored files
-/dataSources/
-/dataSources.local.xml
-
-
-# Build results
+## .NET / ASP.NET Core
 bin/
 obj/
-
-# Visual Studio / Rider
-.vscode/
-.idea/
 *.user
-*.rsuser
 *.suo
-*.sln.docstates
-
-# Logs
+.vs/
 *.log
-logs/
+*.cache
 
-# Environment / secrets
-.env
-.env.*
+## Secrets / config sensibles
 appsettings.Development.json
-appsettings.Local.json
-secrets.json
+**/secrets.json
 
-# Database files
-*.db
-*.sqlite
-*.sqlite3
+## Rider / VS Code
+.idea/
+.vscode/
 
-# OS files
+## OS
 .DS_Store
 Thumbs.db

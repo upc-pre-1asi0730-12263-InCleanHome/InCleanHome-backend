@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USUARIO\\Downloads\\analizar\\InCleanHome.Backend\\InCleanHome.Backend\\InCleanHome.API\\InCleanHome.API.csproj": {}
+    "C:\\Users\\vimae\\Downloads\\InCleanHome_Clean\\InCleanHome.API\\InCleanHome.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USUARIO\\Downloads\\analizar\\InCleanHome.Backend\\InCleanHome.Backend\\InCleanHome.API\\InCleanHome.API.csproj": {
+    "C:\\Users\\vimae\\Downloads\\InCleanHome_Clean\\InCleanHome.API\\InCleanHome.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USUARIO\\Downloads\\analizar\\InCleanHome.Backend\\InCleanHome.Backend\\InCleanHome.API\\InCleanHome.API.csproj",
+        "projectUniqueName": "C:\\Users\\vimae\\Downloads\\InCleanHome_Clean\\InCleanHome.API\\InCleanHome.API.csproj",
         "projectName": "InCleanHome.API",
-        "projectPath": "C:\\Users\\USUARIO\\Downloads\\analizar\\InCleanHome.Backend\\InCleanHome.Backend\\InCleanHome.API\\InCleanHome.API.csproj",
-        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USUARIO\\Downloads\\analizar\\InCleanHome.Backend\\InCleanHome.Backend\\InCleanHome.API\\obj\\",
+        "projectPath": "C:\\Users\\vimae\\Downloads\\InCleanHome_Clean\\InCleanHome.API\\InCleanHome.API.csproj",
+        "packagesPath": "C:\\Users\\vimae\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vimae\\Downloads\\InCleanHome_Clean\\InCleanHome.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\vimae\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -116,7 +116,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.313/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.315/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
